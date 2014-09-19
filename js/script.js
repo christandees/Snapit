@@ -55,12 +55,7 @@ $(document).ready(function(e){
 		$('header h1').text('Likes');
 	});
 	
-	$.ajax({
-		url:'http://cdees.catstudents.com/snapIt/data.php',
-		success: function(data){
-			$('#explore ul').append(data);
-		}
-	});
+
 	$('#likethis').on('click', function(e){
 		$('#likes ul').append().parent().parent().parent();
 	});
