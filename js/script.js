@@ -26,7 +26,7 @@ function onFail(message){
 
 function sharethis(){
 i++
-$('#explore ul').append('<li id="selfie'+i+'"> </li>');
+$('#explore ul').append('<li id="selfie'+i+'"> A;LFJA;SLFJASL;</li>');
 }
 
 $(document).ready(function(e){
