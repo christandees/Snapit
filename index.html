@@ -18,7 +18,7 @@
     <nav>
       <ul>
         <li><a data-tab="explore" data-icon="explore" data-iconpos="top">Explore</a> </li>
-        <li><a data-tab="share" data-icon="share" data-iconpos="top"  >Share</a> </li>
+        <li><a data-tab="share" data-icon="share" data-iconpos="top"  onClick="capturePhoto();">Share</a> </li>
         <li><a data-tab="likes" data-icon="star" data-iconpos="top">Likes</a> </li>
       </ul>
     </nav>
@@ -37,8 +37,8 @@
     </ul>
   </section>
   <section data-role="camera" id="share" >
-    <figure> <img src="" id="selfie" >
-      <figcaption> <a data-icon="shutter" data-iconpos="notext" onClick="capturePhoto();">Take Picture</a> </figcaption>
+    <figure> <img src="" id="selfie" style="display:none;">
+      <figcaption> <a data-icon="shutter" data-iconpos="notext">Take Picture</a> </figcaption>
     </figure>
   </section>
 </div>
