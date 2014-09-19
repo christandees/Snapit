@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
@@ -6,14 +7,14 @@
         id        = "com.catstudents.cdees"
         version   = "1.0.0">
 
-    <name>SnapIt</name>
+    <name>Hello World</name>
 
     <description>
-        For the narcissist in all of us!
+        Hello World sample application that responds to the deviceready event.
     </description>
 
     <author href="http://cdees.catstudents.com" email="christandees@gmail.com">
-        Smartball Digital Design
+        Chris Dees
     </author>
 
     <!--
@@ -25,13 +26,13 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
-    <preference name="ios-statusbarstyle"         value="black-translucent" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
@@ -43,30 +44,27 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-    <gap:plugin name="org.apache.cordova.battery-status" version="0.2.7" />
-<gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
-<gap:plugin name="org.apache.cordova.console" version="0.2.7" />
-<gap:plugin name="org.apache.cordova.contacts" version="0.2.11" />
-<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
-<gap:plugin name="org.apache.cordova.device-motion" version="0.2.6" />
-<gap:plugin name="org.apache.cordova.device-orientation" version="0.3.5" />
-<gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
-<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
-<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.2" />
-<gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
-<gap:plugin name="org.apache.cordova.globalization" version="0.2.6" />
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
-<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
-<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
-<gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
-<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
-
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-    
-    <feature name="http://api.phonegap.com/1.0/camera"/>
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
