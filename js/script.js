@@ -1,5 +1,5 @@
 var pictureSource, destinationType;
-var i=0;
+
 document.addEventListener('deviceready', loaded, false);
 
 function loaded(){
@@ -24,12 +24,10 @@ function onFail(message){
 	alert('Failed due to: '+message);
 }
 
-function sharethis(){
-i++
-$('#explore ul').append('<li id="selfie'+i+'"> A;LFJA;SLFJASL;</li>');
-}
+
 
 $(document).ready(function(e){
+	var i=0;
 	$('html').addClass('js');
 	
 	$('[data-role=page]').on('mouseover', '[data-icon]', function(e){
@@ -61,6 +59,12 @@ $(document).ready(function(e){
 
 	$('#likethis').on('click', function(e){
 		$('#likes ul').append().parent().parent().parent();
+	});
+	
+	$('#sharethis').on('click', function(e){
+		i++
+		$('#explore ul').append('<li id="ep'+i+'"></li>');
+		$('#selfie').clone().appendTo('#ep'+i+'');			
 	});
 	
 		$.ajax({
