@@ -54,7 +54,7 @@ $(document).ready(function(e){
 	});
 	
 	$.ajax({
-		url:'http://jmelsom.catstudents.com/snapIt/data.php',
+		url:'http://cdees.catstudents.com/snapIt/data.php',
 		success: function(data){
 			$('#explore ul').append(data);
 		}
