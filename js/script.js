@@ -1,5 +1,5 @@
 var pictureSource, destinationType;
-
+var i=0;
 document.addEventListener('deviceready', loaded, false);
 
 function loaded(){
@@ -22,6 +22,11 @@ function getPhoto(imageData){
 }
 function onFail(message){
 	alert('Failed due to: '+message);
+}
+
+function sharethis(){
+i++
+$('#explore ul').append('<li id="selfie'+i+'"> </li>');
 }
 
 $(document).ready(function(e){
