@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.catstudents.jmelsom"
+        id        = "com.catstudents.cdees"
         version   = "1.0.0">
 
     <name>SnapIt</name>
@@ -12,8 +12,8 @@
         For the narcissist in all of us!
     </description>
 
-    <author href="http://jmelsom.catstudents.com" email="jmelsom@live.ca">
-        James Melsom IMD 5010
+    <author href="http://cdees.catstudents.com" email="christandees@gmail.com">
+        Smartball Digital Design
     </author>
 
     <!--
