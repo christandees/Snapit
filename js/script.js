@@ -16,7 +16,9 @@ function capturePhoto(){
 	});
 }
 function getPhoto(imageData){
-	var smallImage = document.getElementById('selfie');
+	i++
+	$('#explore ul').append('<li id=selfie'+i+'></li>')
+	var smallImage = document.getElementById('selfie'+i+'');
 	smallImage.style.display = 'block';
 	smallImage.src = "data:image/jpeg;base64,"+imageData;
 }
