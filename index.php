@@ -26,6 +26,7 @@
   </footer>
   <section data-role="gallery" id="explore">
     <ul>
+    <?php include_once('data.php'); ?> 
     </ul>
   </section>
   <section data-role="likes" id="likes">
