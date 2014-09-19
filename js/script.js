@@ -62,4 +62,12 @@ $(document).ready(function(e){
 	$('#likethis').on('click', function(e){
 		$('#likes ul').append().parent().parent().parent();
 	});
+	
+		$.ajax({
+		url:'http://cdees.catstudents.com/snapit/data.php',
+		success: function(data){
+		$('#explore ul').append(data);
+		}
+		
+		});
 });
